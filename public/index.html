@@ -3,83 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Primary Meta Tags -->
-    <title>David Carton | Full Stack Web Developer | Curriculum Vitae & Portfolio</title>
-    <meta name="title" content="David Carton | Full Stack Web Developer | Curriculum Vitae & Portfolio">
-    <meta name="description" content="Full Stack Web Developer with 10 years of experience specializing in PHP, Laravel, HTML, CSS, JavaScript, and Bootstrap. Based in Roeselare, Belgium.">
+    <title data-i18n="meta.title">David Carton | Full Stack Web Developer | Curriculum Vitae & Portfolio</title>
+    <meta name="description" data-i18n="meta.description" content="Full Stack Web Developer with 10 years of experience specializing in PHP, Laravel, HTML, CSS, JavaScript, and Bootstrap. Based in Roeselare, Belgium.">
     <meta name="keywords" content="Full Stack Developer, Web Developer, PHP Developer, Laravel, JavaScript, HTML, CSS, Bootstrap, Roeselare, Belgium">
     <meta name="author" content="David Carton">
     <meta name="robots" content="index, follow">
-    <meta name="language" content="nl_BE">
-    <!-- Open Graph / Facebook -->
+    <meta name="language" content="en">
+
     <meta property="og:type" content="website">
-    <meta property="og:title" content="David Carton | Full Stack Web Developer">
-    <meta property="og:description" content="Full Stack Web Developer with 10 years of experience specializing in PHP, Laravel, HTML, CSS, JavaScript, and Bootstrap.">
-    <meta property="og:locale" content="nl_BE">
-    <!-- Open Graph Image Tags -->
-    <meta property="og:image" content="https://notrac.be/img/david_og.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1200">
-    <meta property="og:image:alt" content="David Carton - Full Stack Web Developer">
-    <!-- Twitter -->
+    <meta property="og:title" data-i18n="og.title" content="David Carton | Full Stack Web Developer">
+    <meta property="og:description" data-i18n="og.description" content="Full Stack Web Developer with 10 years of experience specializing in PHP, Laravel, HTML, CSS, JavaScript, and Bootstrap.">
+    <meta property="og:locale" content="en_US">
+
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="David Carton | Full Stack Web Developer">
-    <meta name="twitter:description" content="Full Stack Web Developer with 10 years of experience specializing in PHP, Laravel, HTML, CSS, JavaScript, and Bootstrap.">
-    <!-- Twitter Image Tag -->
-    <meta name="twitter:image" content="https://notrac.be/img/david_og.png">
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://notrac.be">
-    <!-- schema.org structured data for better SEO -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "David Carton",
-            "jobTitle": "Full Stack Web Developer",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Roeselare",
-                "postalCode": "8800",
-                "addressCountry": "BE"
-            },
-            "email": "david@notrac.be",
-            "url": "https://notrac.be",
-            "sameAs": [
-                "https://github.com/voorhof"
-            ],
-            "knowsAbout": [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "PHP",
-                "SQL",
-                "Laravel",
-                "Bootstrap",
-                "Git",
-                "MVC",
-                "API Development",
-                "CMS Development",
-                "Email Development"
-            ],
-            "skills": "Frontend Development, Backend Development, Full Stack Development, Web Development, Database Management, Server Administration"
-        }
-    </script>
-    <!-- Google search console -->
-    <meta name="google-site-verification" content="RwmZEY84AWBqqqGi5i2b_PJxpKliMbaSjKptqVuOWHE">
-    <!-- Favicons -->
+    <meta name="twitter:title" data-i18n="twitter.title" content="David Carton | Full Stack Web Developer">
+    <meta name="twitter:description" data-i18n="twitter.description" content="Full Stack Web Developer with 10 years of experience specializing in PHP, Laravel, HTML, CSS, JavaScript, and Bootstrap.">
+
     <link rel="shortcut icon" href="./favicon.ico">
-    <link rel="manifest" href="./site.webmanifest">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
     <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <meta name="apple-mobile-web-app-title" content="David Carton">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
+
+<nav class="navbar navbar-expand-md bg-body-tertiary border-bottom">
+  <div class="container">
+    <a class="navbar-brand" href="#" data-i18n="nav.brand">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="navbar-nav ms-auto align-items-md-center gap-2">
+        <li class="nav-item">
+          <a class="btn btn-outline-secondary" href="https://github.com/voorhof" target="_blank" rel="noopener" id="btnGithub" aria-label="GitHub">
+            <i class="bi bi-github me-1"></i>
+            <span data-i18n="buttons.github">GitHub</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#infoModal" id="btnInfo" role="button">
+            <i class="bi bi-info-circle me-1"></i>
+            <span data-i18n="buttons.info">Info</span>
+          </button>
+        </li>
+        <li class="nav-item dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="btnLang" role="button">
+            <i class="bi bi-translate me-1"></i><span data-i18n="buttons.language">Language</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item lang-choice" data-lang="en" href="#">English</a></li>
+            <li><a class="dropdown-item lang-choice" data-lang="de" href="#">Deutsch</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <main>
     <div class="container py-4">
         <div class="row">
@@ -87,48 +71,45 @@
                 <img src="./img/david_og.png" alt="David Carton" class="img-fluid rounded-circle border border-primary d-block mb-2" width="250" height="250">
                 <h1 class="display-5">David Carton</h1>
                 <h2 class="h3 fw-light lh-sm">
-                    Full-stack web&nbsp;developer <br>
-                    Multimedia expert
+                    <span data-i18n="hero.role">Full-stack web&nbsp;developer</span> <br>
+                    <span data-i18n="hero.tag">Multimedia expert</span>
                 </h2>
 
                 <address>
                     <a href="mailto:david@notrac.be" class="text-decoration-none">
                         <i class="bi bi-envelope"></i>
-                        david@notrac.be
+                        <span>david@notrac.be</span>
                     </a>
                     <br>
                     <a href="https://www.linkedin.com/in/carton-david/" target="_blank" class="text-decoration-none">
                         <i class="bi bi-linkedin"></i>
-                        linkedin.com
+                        <span>linkedin.com</span>
                     </a>
                 </address>
 
-                <h3 class="h5 fw-normal">Career highlights</h3>
-
+                <h3 class="h5 fw-normal" data-i18n="left.highlights">Career highlights</h3>
                 <ul class="small">
-                    <li>2018 - 2025: Roularta Media Group</li>
-                    <li>2006 - 2015: XL Video / PRG</li>
-                    <li>2002 - 2020: Events technical support</li>
+                    <li data-i18n="left.hl1">2018 - 2025: Roularta Media Group</li>
+                    <li data-i18n="left.hl2">2006 - 2015: XL Video / PRG</li>
+                    <li data-i18n="left.hl3">2002 - 2020: Events technical support</li>
                 </ul>
 
-                <h3 class="h5 fw-normal">Training</h3>
-
+                <h3 class="h5 fw-normal" data-i18n="left.training">Training</h3>
                 <ul class="small">
-                    <li>2017: Full Stack Developer — Syntra West</li>
-                    <li>2007: Video engineer — XL Video</li>
-                    <li>2004: Sound engineer — Syntra West</li>
-                    <li>2003: Basic electricity — VDAB</li>
-                    <li>2001: A2 Informatica — Burgerschool</li>
+                    <li data-i18n="left.tr1">2017: Full Stack Developer — Syntra West</li>
+                    <li data-i18n="left.tr2">2007: Video engineer — XL Video</li>
+                    <li data-i18n="left.tr3">2004: Sound engineer — Syntra West</li>
+                    <li data-i18n="left.tr4">2003: Basic electricity — VDAB</li>
+                    <li data-i18n="left.tr5">2001: A2 Informatica — Burgerschool</li>
                 </ul>
 
-                <h3 class="h5 fw-normal">Badges</h3>
-
+                <h3 class="h5 fw-normal" data-i18n="left.badges">Badges</h3>
                 <div class="fs-4 mb-3">
                     <i class="bi bi-filetype-html" title="HTML"></i>
                     <i class="bi bi-filetype-php" title="PHP"></i>
                     <i class="bi bi-filetype-sql" title="SQL"></i>
-                    <i class="bi bi-css" title="CSS"></i>
-                    <i class="bi bi-javascript" title="JavaScript"></i>
+                    <i class="bi bi-filetype-css" title="CSS"></i>
+                    <i class="bi bi-filetype-js" title="JavaScript"></i>
                     <br>
                     <i class="bi bi-windows" title="Windows"></i>
                     <i class="bi bi-apple" title="Apple"></i>
@@ -136,7 +117,7 @@
                     <i class="bi bi-android2" title="Android"></i>
                     <br>
                     <i class="bi bi-file-pdf-fill" title="Acrobat"></i>
-                    <i class="bi bi-wordpress" title="Wordpress"></i>
+                    <i class="bi bi-wordpress" title="WordPress"></i>
                     <i class="bi bi-openai" title="OpenAI"></i>
                     <br>
                     <i class="bi bi-camera-reels-fill" title="Movies"></i>
@@ -147,62 +128,244 @@
             </div>
 
             <div class="col-md ps-md-3 ps-lg-4 ps-xl-5 pt-2">
-                <h3>
-                    Skills
-                </h3>
-
+                <h3 data-i18n="sections.skills">Skills</h3>
                 <ul>
-                    <li>Mastering the frontend base: HTML, CSS, JS.</li>
-                    <li>Traveling to the backend: PHP, SQL, DNS.</li>
-                    <li>Loves extravaganza: GIT, BEM, MVC, API, CRM, ERP, AI — a shortlist of fancy acronyms taken from daily life.</li>
-                    <li>Prefers building from scratch, but also enjoys a good old refactoring session within existing code.</li>
-                    <li>Well versed in audio and video technology.</li>
-                    <li>Creating email templates for newsletters and corporate mailings.</li>
-                    <li>Managing servers, databases, deploys and repositories.</li>
-                    <li>Favourite frameworks: Laravel for PHP & Bootstrap as frontend toolkit.</li>
+                    <li data-i18n="skills.s1">Mastering the frontend base: HTML, CSS, JS.</li>
+                    <li data-i18n="skills.s2">Traveling to the backend: PHP, SQL, DNS.</li>
+                    <li data-i18n="skills.s3">Loves extravaganza: GIT, BEM, MVC, API, CRM, ERP, AI — a shortlist of fancy acronyms taken from daily life.</li>
+                    <li data-i18n="skills.s4">Prefers building from scratch, but also enjoys a good old refactoring session within existing code.</li>
+                    <li data-i18n="skills.s5">Well versed in audio and video technology.</li>
+                    <li data-i18n="skills.s6">Creating email templates for newsletters and corporate mailings.</li>
+                    <li data-i18n="skills.s7">Managing servers, databases, deploys and repositories.</li>
+                    <li data-i18n="skills.s8">Favourite frameworks: Laravel for PHP & Bootstrap as frontend toolkit.</li>
                 </ul>
 
-                <h3>
-                    Experience
-                </h3>
-
+                <h3 data-i18n="sections.experience">Experience</h3>
                 <ul>
-                    <li>Ten years of web development, including 7 as a professional.</li>
-                    <li>Building and maintaining websites, from a small one-pager to bigger role-based dynamic apps and webshops.</li>
-                    <li>Setting up online customer journeys with forms, validation, data processing, storage, emails and reports.</li>
-                    <li>Creating custom CMSs and installing the standards such as WordPress or Drupal.</li>
-                    <li>Error handling and first-line customer support.</li>
-                    <li>Worldwide event support for video and audio.</li>
-                    <li>Working in events, IT, and marketing environments.</li>
-                    <li>Curious enough to find an answer to every question. <em class="small">#QuickSecretGoogleSearch</em></li>
-                    <li>More fancy acronyms: GTM, NPM, CRUD, UX, UI, DRY, SASS, ...</li>
+                    <li data-i18n="exp.e1">Ten years of web development, including 7 as a professional.</li>
+                    <li data-i18n="exp.e2">Building and maintaining websites, from a small one-pager to bigger role-based dynamic apps and webshops.</li>
+                    <li data-i18n="exp.e3">Setting up online customer journeys with forms, validation, data processing, storage, emails and reports.</li>
+                    <li data-i18n="exp.e4">Creating custom CMSs and installing the standards such as WordPress or Drupal.</li>
+                    <li data-i18n="exp.e5">Error handling and first-line customer support.</li>
+                    <li data-i18n="exp.e6">Worldwide event support for video and audio.</li>
+                    <li data-i18n="exp.e7">Working in events, IT, and marketing environments.</li>
+                    <li data-i18n="exp.e8">Curious enough to find an answer to every question. <em class="small">#QuickSecretGoogleSearch</em></li>
+                    <li data-i18n="exp.e9">More fancy acronyms: GTM, NPM, CRUD, UX, UI, DRY, SASS, ...</li>
                 </ul>
 
-                <h3>
-                    Portfolio
-                </h3>
-
+                <h3 data-i18n="sections.portfolio">Portfolio</h3>
                 <ul>
-                    <li><a href="https://kw.be/" target="_blank" class="text-decoration-none">KW</a> — website front-end and marketing campaigns</li>
-                    <li><a href="https://www.dezondag.be/" target="_blank" class="text-decoration-none">De Zondag</a> — website front-end and marketing campaigns</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Tour_of_the_Universe_(tour)" target="_blank" class="text-decoration-none">Depeche Mode — Tour of the Universe</a> — LED Video</li>
-                    <li><a href="https://en.wikipedia.org/wiki/25_Live" target="_blank" class="text-decoration-none">George Michael — 25 Live</a> — LED Video</li>
-                    <li><a href="https://fruityfit.be/" target="_blank" class="text-decoration-none">FruityFit</a> — Laravel website with custom CMS</li>
-                    <li><a href="https://jobvillage.be/" target="_blank" class="text-decoration-none">Jobvillage</a> — registration process and comprehensive backend support</li>
-                    <li><a href="https://knackreizen.be/" target="_blank" class="text-decoration-none">Knack reizen</a> — line extensions website with registrations</li>
-                    <li><a href="https://pureblend.be/" target="_blank" class="text-decoration-none">PureBlend.be</a> — theme switcher snippet</li>
-                    <li><a href="https://magischezwitsersesteden.be/" target="_blank" class="text-decoration-none">MagischeZwitserseSteden.be</a> — multilanguage WordPress website</li>
-                    <li><a href="https://annualreport.roularta.be/2023/" target="_blank" class="text-decoration-none">AnnualReport.Roularta.be</a> — custom multilanguage website</li>
+                    <li><a href="https://kw.be/" target="_blank" class="text-decoration-none">KW</a> — <span data-i18n="port.p1">website front-end and marketing campaigns</span></li>
+                    <li><a href="https://www.dezondag.be/" target="_blank" class="text-decoration-none">De Zondag</a> — <span data-i18n="port.p2">website front-end and marketing campaigns</span></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Tour_of_the_Universe_(tour)" target="_blank" class="text-decoration-none">Depeche Mode — Tour of the Universe</a> — <span data-i18n="port.p3">LED Video</span></li>
+                    <li><a href="https://en.wikipedia.org/wiki/25_Live" target="_blank" class="text-decoration-none">George Michael — 25 Live</a> — <span data-i18n="port.p4">LED Video</span></li>
+                    <li><a href="https://fruityfit.be/" target="_blank" class="text-decoration-none">FruityFit</a> — <span data-i18n="port.p5">Laravel website with custom CMS</span></li>
+                    <li><a href="https://jobvillage.be/" target="_blank" class="text-decoration-none">Jobvillage</a> — <span data-i18n="port.p6">registration process and comprehensive backend support</span></li>
+                    <li><a href="https://knackreizen.be/" target="_blank" class="text-decoration-none">Knack reizen</a> — <span data-i18n="port.p7">line extensions website with registrations</span></li>
+                    <li><a href="https://pureblend.be/" target="_blank" class="text-decoration-none">PureBlend.be</a> — <span data-i18n="port.p8">theme switcher snippet</span></li>
+                    <li><a href="https://magischezwitsersesteden.be/" target="_blank" class="text-decoration-none">MagischeZwitserseSteden.be</a> — <span data-i18n="port.p9">multilanguage WordPress website</span></li>
+                    <li><a href="https://annualreport.roularta.be/2023/" target="_blank" class="text-decoration-none">AnnualReport.Roularta.be</a> — <span data-i18n="port.p10">custom multilanguage website</span></li>
                 </ul>
 
                 <div class="py-2">
                     <a href="mailto:david@notrac.be" class="btn btn-lg btn-primary">
-                        <i class="bi bi-envelope me-1"></i> Contact me
+                        <i class="bi bi-envelope me-1"></i>
+                        <span data-i18n="buttons.contact">Contact me</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </main>
+
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoModalLabel" data-i18n="info.title">About this portfolio</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p data-i18n="info.p1">This single-page CV & portfolio highlights experience, skills, and selected projects. Built with Bootstrap 5 and Bootstrap Icons.</p>
+        <p data-i18n="info.p2">Privacy-first: no analytics, no trackers, no cookies. External links open in a new tab.</p>
+        <p data-i18n="info.p3">For collaboration, inquiries, or references, feel free to get in touch via email or LinkedIn.</p>
+        <hr>
+        <p class="small mb-0" data-i18n="info.p4">Version: 1.1 — i18n-enabled (EN/DE), Info modal, GitHub button, persistent language preference.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="buttons.close">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+(function(){
+  const i18n = {
+    en: {
+      'meta.title': 'David Carton | Full Stack Web Developer | Curriculum Vitae & Portfolio',
+      'meta.description': 'Full Stack Web Developer with 10 years of experience specializing in PHP, Laravel, HTML, CSS, JavaScript, and Bootstrap. Based in Roeselare, Belgium.',
+      'og.title': 'David Carton | Full Stack Web Developer',
+      'og.description': 'Full Stack Web Developer with 10 years of experience specializing in PHP, Laravel, HTML, CSS, JavaScript, and Bootstrap.',
+      'twitter.title': 'David Carton | Full Stack Web Developer',
+      'twitter.description': 'David Carton | Full Stack Web Developer',
+      'nav.brand': 'Portfolio',
+      'buttons.github': 'GitHub',
+      'buttons.info': 'Info',
+      'buttons.language': 'Language',
+      'buttons.contact': 'Contact me',
+      'buttons.close': 'Close',
+      'hero.role': 'Full-stack web\u00a0developer',
+      'hero.tag': 'Multimedia expert',
+      'left.highlights': 'Career highlights',
+      'left.hl1': '2018 - 2025: Roularta Media Group',
+      'left.hl2': '2006 - 2015: XL Video / PRG',
+      'left.hl3': '2002 - 2020: Events technical support',
+      'left.training': 'Training',
+      'left.tr1': '2017: Full Stack Developer — Syntra West',
+      'left.tr2': '2007: Video engineer — XL Video',
+      'left.tr3': '2004: Sound engineer — Syntra West',
+      'left.tr4': '2003: Basic electricity — VDAB',
+      'left.tr5': '2001: A2 Informatica — Burgerschool',
+      'left.badges': 'Badges',
+      'sections.skills': 'Skills',
+      'skills.s1': 'Mastering the frontend base: HTML, CSS, JS.',
+      'skills.s2': 'Traveling to the backend: PHP, SQL, DNS.',
+      'skills.s3': 'Loves extravaganza: GIT, BEM, MVC, API, CRM, ERP, AI — a shortlist of fancy acronyms taken from daily life.',
+      'skills.s4': 'Prefers building from scratch, but also enjoys a good old refactoring session within existing code.',
+      'skills.s5': 'Well versed in audio and video technology.',
+      'skills.s6': 'Creating email templates for newsletters and corporate mailings.',
+      'skills.s7': 'Managing servers, databases, deploys and repositories.',
+      'skills.s8': 'Favourite frameworks: Laravel for PHP & Bootstrap as frontend toolkit.',
+      'sections.experience': 'Experience',
+      'exp.e1': 'Ten years of web development, including 7 as a professional.',
+      'exp.e2': 'Building and maintaining websites, from a small one-pager to bigger role-based dynamic apps and webshops.',
+      'exp.e3': 'Setting up online customer journeys with forms, validation, data processing, storage, emails and reports.',
+      'exp.e4': 'Creating custom CMSs and installing the standards such as WordPress or Drupal.',
+      'exp.e5': 'Error handling and first-line customer support.',
+      'exp.e6': 'Worldwide event support for video and audio.',
+      'exp.e7': 'Working in events, IT, and marketing environments.',
+      'exp.e8': 'Curious enough to find an answer to every question. #QuickSecretGoogleSearch',
+      'exp.e9': 'More fancy acronyms: GTM, NPM, CRUD, UX, UI, DRY, SASS, ...',
+      'sections.portfolio': 'Portfolio',
+      'port.p1': 'website front-end and marketing campaigns',
+      'port.p2': 'website front-end and marketing campaigns',
+      'port.p3': 'LED Video',
+      'port.p4': 'LED Video',
+      'port.p5': 'Laravel website with custom CMS',
+      'port.p6': 'registration process and comprehensive backend support',
+      'port.p7': 'line extensions website with registrations',
+      'port.p8': 'theme switcher snippet',
+      'port.p9': 'multilanguage WordPress website',
+      'port.p10': 'custom multilanguage website',
+      'info.title': 'About this portfolio',
+      'info.p1': 'This single-page CV & portfolio highlights experience, skills, and selected projects. Built with Bootstrap 5 and Bootstrap Icons.',
+      'info.p2': 'Privacy-first: no analytics, no trackers, no cookies. External links open in a new tab.',
+      'info.p3': 'For collaboration, inquiries, or references, feel free to get in touch via email or LinkedIn.',
+      'info.p4': 'Version: 1.1 — i18n-enabled (EN/DE), Info modal, GitHub button, persistent language preference.'
+    },
+    de: {
+      'meta.title': 'David Carton | Full‑Stack Webentwickler | Lebenslauf & Portfolio',
+      'meta.description': 'Full‑Stack‑Webentwickler mit 10 Jahren Erfahrung in PHP, Laravel, HTML, CSS, JavaScript und Bootstrap. Standort: Roeselare, Belgien.',
+      'og.title': 'David Carton | Full‑Stack Webentwickler',
+      'og.description': 'Full‑Stack‑Webentwickler mit 10 Jahren Erfahrung in PHP, Laravel, HTML, CSS, JavaScript und Bootstrap.',
+      'twitter.title': 'David Carton | Full‑Stack Webentwickler',
+      'twitter.description': 'David Carton | Full‑Stack Webentwickler',
+      'nav.brand': 'Portfolio',
+      'buttons.github': 'GitHub',
+      'buttons.info': 'Info',
+      'buttons.language': 'Sprache',
+      'buttons.contact': 'Kontakt',
+      'buttons.close': 'Schließen',
+      'hero.role': 'Full‑Stack‑Webentwickler',
+      'hero.tag': 'Multimedia‑Experte',
+      'left.highlights': 'Karriere‑Highlights',
+      'left.hl1': '2018 – 2025: Roularta Media Group',
+      'left.hl2': '2006 – 2015: XL Video / PRG',
+      'left.hl3': '2002 – 2020: Technischer Event‑Support',
+      'left.training': 'Ausbildung',
+      'left.tr1': '2017: Full‑Stack‑Developer — Syntra West',
+      'left.tr2': '2007: Videoingenieur — XL Video',
+      'left.tr3': '2004: Tontechniker — Syntra West',
+      'left.tr4': '2003: Grundlagen Elektrotechnik — VDAB',
+      'left.tr5': '2001: A2 Informatica — Burgerschool',
+      'left.badges': 'Badges',
+      'sections.skills': 'Fähigkeiten',
+      'skills.s1': 'Sichere Basis im Frontend: HTML, CSS, JS.',
+      'skills.s2': 'Zuhause im Backend: PHP, SQL, DNS.',
+      'skills.s3': 'Liebt Abkürzungs‑Extravaganza: GIT, BEM, MVC, API, CRM, ERP, AI — eine Auswahl aus dem Alltag.',
+      'skills.s4': 'Baut gerne von Grund auf, mag aber auch Refactoring in bestehendem Code.',
+      'skills.s5': 'Versiert in Audio‑ und Video‑Technik.',
+      'skills.s6': 'Erstellt E‑Mail‑Templates für Newsletter und Unternehmenskommunikation.',
+      'skills.s7': 'Betreibt Server, Datenbanken, Deployments und Repositories.',
+      'skills.s8': 'Lieblings‑Frameworks: Laravel (PHP) & Bootstrap (Frontend‑Toolkit).',
+      'sections.experience': 'Erfahrung',
+      'exp.e1': 'Zehn Jahre Webentwicklung, davon 7 Jahre professionell.',
+      'exp.e2': 'Aufbau und Betrieb von Websites — vom One‑Pager bis zu rollenbasierten Apps und Webshops.',
+      'exp.e3': 'Aufsetzen von Customer Journeys mit Formularen, Validierung, Verarbeitung, Speicherung, E‑Mails und Reports.',
+      'exp.e4': 'Eigene CMS‑Lösungen sowie Standardlösungen wie WordPress oder Drupal.',
+      'exp.e5': 'Fehlerbehandlung und First‑Level‑Support.',
+      'exp.e6': 'Weltweite Event‑Unterstützung für Video und Audio.',
+      'exp.e7': 'Erfahrung in Event‑, IT‑ und Marketing‑Umgebungen.',
+      'exp.e8': 'Neugierig genug, um für jede Frage eine Antwort zu finden. #QuickSecretGoogleSearch',
+      'exp.e9': 'Weitere Kürzel: GTM, NPM, CRUD, UX, UI, DRY, SASS, ...',
+      'sections.portfolio': 'Portfolio',
+      'port.p1': 'Website‑Frontend und Marketing‑Kampagnen',
+      'port.p2': 'Website‑Frontend und Marketing‑Kampagnen',
+      'port.p3': 'LED‑Video',
+      'port.p4': 'LED‑Video',
+      'port.p5': 'Laravel‑Website mit Custom‑CMS',
+      'port.p6': 'Registrierungsprozess und umfassender Backend‑Support',
+      'port.p7': 'Landing‑Seite mit Registrierungen',
+      'port.p8': 'Theme‑Switcher‑Snippet',
+      'port.p9': 'Mehrsprachige WordPress‑Website',
+      'port.p10': 'Individuelle mehrsprachige Website',
+      'info.title': 'Über dieses Portfolio',
+      'info.p1': 'Diese One‑Pager‑Vita & Portfolio zeigt Erfahrung, Skills und ausgewählte Projekte. Erstellt mit Bootstrap 5 und Bootstrap Icons.',
+      'info.p2': 'Privacy‑first: Keine Analytics, keine Tracker, keine Cookies. Externe Links öffnen in einem neuen Tab.',
+      'info.p3': 'Für Zusammenarbeit, Anfragen oder Referenzen gerne per E‑Mail oder LinkedIn melden.',
+      'info.p4': 'Version: 1.1 — mit i18n (DE/EN), Info‑Modal, GitHub‑Button und persistenter Sprachwahl.'
+    }
+  };
+
+  function applyI18n(lang){
+    const dict = i18n[lang] || i18n.en;
+    document.documentElement.setAttribute('lang', lang);
+
+    document.title = dict['meta.title'];
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const val = dict[key];
+      if (!val) return;
+      if (el.tagName === 'META') {
+        el.setAttribute('content', val);
+      } else {
+        el.innerHTML = val;
+      }
+    });
+    localStorage.setItem('portfolio_lang', lang);
+  }
+
+  function initLang(){
+    const saved = localStorage.getItem('portfolio_lang');
+    const lang = saved || 'en';
+    applyI18n(lang);
+  }
+
+  document.addEventListener('click', function(e){
+    const a = e.target.closest('.lang-choice');
+    if(a){
+      e.preventDefault();
+      const lang = a.dataset.lang;
+      applyI18n(lang);
+    }
+  });
+
+  initLang();
+})();
+</script>
 </body>
 </html>
